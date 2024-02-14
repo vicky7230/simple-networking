@@ -1,0 +1,12 @@
+afterEvaluate { //1
+    publishing { //2
+        publications { //3
+            release(MavenPublication) { //4
+                from components.release
+                groupId = 'com.vicky7230.simple_networking' //5
+                artifactId = 'http' //6
+                version="1.0.0" //7
+            }
+        }
+    }
+}
